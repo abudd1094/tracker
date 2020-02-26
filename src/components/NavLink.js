@@ -5,7 +5,7 @@ import { withNavigation } from "react-navigation";
 
 const NavLink = ({ navigation, text, routeName }) => {
    return (
-      <TouchableOpacity onPress={() => navigation.navigate('Signin')}>
+      <TouchableOpacity onPress={() => navigation.navigate(routeName)}>
          <Spacer>
             <Text style={styles.link}>
                {text}
